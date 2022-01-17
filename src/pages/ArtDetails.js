@@ -96,13 +96,12 @@ export default function ArtDetails() {
                             </ul>
                         </>
                     )}
-                    {details && (
+                    {details && details.description[0].value && (
                         <div className="about">
                             <h2>About {details.label}</h2>
                             <p dangerouslySetInnerHTML={{ __html: details.description[0].value }}></p>
                         </div>
                     )}
-
                 </div>
             </div>
             {showLightbox && <Lightbox handleClose={handleClose} imgSrc={info.data.image_id} />}
