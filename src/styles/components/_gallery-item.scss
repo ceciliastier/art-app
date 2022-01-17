@@ -1,0 +1,19 @@
+.gallery{
+    width: 100%;
+    .item{
+        position: relative;
+        width: 100%;
+        .title{
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            background: linear-gradient(#00000000, #000000b2);
+            width: 100%;
+            padding: 20px 10px 10px;
+            h3, p{
+                margin: 0;
+            }
+        }
+    }
+}
+

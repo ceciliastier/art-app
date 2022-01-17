@@ -1,0 +1,95 @@
+.details{
+    display: grid;
+    // display: flex;
+    // flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    row-gap: 20px;
+
+    @include md{
+        grid-template-columns: 1fr 1fr;
+        // grid-template-rows: repeat(2, minmax(1fr, 30%));
+        column-gap: 20px;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+    }
+    .img-container{
+        position: relative;
+        display: flex;
+        max-width: fit-content;
+        // max-height: 85vh;
+        
+        @include md{
+            grid-column: 1/2;
+            grid-row: 1/4;
+            height: max-content;
+            position: sticky;
+            top: 115px;
+            // max-height: 80vh;
+            // background-color: $very-light-gray;
+        }
+        img{
+            max-width: 100%;
+            @include md{
+                // object-fit: contain;
+                // padding: 10px;
+            }
+            
+        }
+        button{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            @include btn(45px);
+            border: none;
+            margin: 8px;
+            font-size: 1.5rem;
+            background-color: $black;
+            color: $very-light-gray;
+            @include md{
+                margin: 16px;
+               
+            }
+            &:hover{
+                background-color: $very-light-gray;
+                color: $black;
+                @include md{
+                    background-color: $light-gray;
+                    // box-shadow: $shadow;
+                }
+            }
+        }
+    }
+    .text-container{
+        @include lg{
+            position: sticky;
+            top: 115px;
+        }
+    }
+    .details-title{
+        grid-row: 1;
+        @include md{
+            grid-column: 2/3;
+            grid-row: 1;
+        }
+        h3{
+            margin: 3px 0;
+        }
+    }
+    .meta-details{
+        padding: 0;
+        li{
+            list-style: none;
+            padding: 10px 0 0;
+            &:first-of-type{
+                padding: 0;
+            }
+        }
+    }
+    .about{
+        margin-top: 20px;
+    }
+    h2{
+        margin: 0 0 10px;
+    }
+}

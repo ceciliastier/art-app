@@ -1,0 +1,26 @@
+@mixin btn($dims){
+    width: $dims;
+    height: $dims;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 100%;
+    border: none;
+}
+
+// @mixin btn-1 {
+//     @include btn;
+//     &:hover:not(.selected){
+//         background: rgb(240, 240, 240);
+//     }
+//     &.selected{
+//         background: rgb(228, 228, 228);
+//     }
+//     &.disabled{
+//         a, i{
+//             color: rgb(128, 128, 128);
+//         }
+//     }
+// }

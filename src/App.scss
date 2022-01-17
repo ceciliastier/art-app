@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+// utilities
+@import './styles/utilities/breakpoints';
+@import './styles/utilities/vars';
+@import './styles/utilities/mixins';
+
+// base
+@import './styles/base/typography';
+
+// layout
+@import './styles/layout/header';
+@import './styles/layout/wrapper';
+@import './styles/layout/footer';
+@import './styles/layout/details';
+
+// components
+@import './styles/components/search-bar';
+@import './styles/components/gallery-list';
+@import './styles/components/pagination';
+@import './styles/components/gallery-item';
+@import './styles/components/lightbox';
+@import './styles/components/results-count';
+
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+body{
+    background-color: lighten($very-light-gray, 50%);
+}

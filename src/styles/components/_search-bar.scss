@@ -1,0 +1,33 @@
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    i {
+        position: absolute;
+        right: 0;
+        padding: 12px;
+        color: $gray;
+        @include sm {
+            padding: 14px;
+        }
+    }
+    input {
+        outline: none;
+        border: none;
+        transition: all 0.3s;
+        padding: 0 0 0 12px;
+        background-color: $very-light-gray;
+        height: 40px;
+        width: 100%;
+        border-radius: 50px;
+
+        @include sm {
+            height: 45px;
+            max-width: 300px;
+            margin-left: auto;
+        }
+        &:focus {
+            box-shadow: $shadow;
+        }
+    }
+}

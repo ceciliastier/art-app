@@ -1,0 +1,18 @@
+.results-count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    select{
+        border: 5px solid $very-light-gray;
+        background-color: $very-light-gray;
+        height: 40px;
+        padding: 0 12px;
+        border-radius: 50px;
+        text-align: center;
+        outline: none;
+    //     -moz-appearance:none !important;
+    // -webkit-appearance: none !important; 
+    // appearance: none !important;
+    }
+}

@@ -1,0 +1,31 @@
+.gallery{
+    column-count: 1;
+    column-gap: 20px;
+    padding-top: 10px;
+    @include sm{
+        column-count: 2;
+    }
+    @include md{
+        column-count: 3;
+    }
+    @include lg{
+        column-count: 4;
+    }
+    img{
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+    .item{
+        margin-bottom: 20px;
+    }
+}
+.details{
+    .gallery{
+        img{
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            
+        }
+    }
+}

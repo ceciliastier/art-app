@@ -1,0 +1,31 @@
+.pagination {
+    margin: 2rem 0;
+    ul {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        max-width: 500px;
+        margin: 0 auto;
+        li {
+            list-style-type: none;
+            // margin: 3px;
+            a{
+                @include btn(35px);
+                // background-color: $very-light-gray;
+            }
+            // TODO: add to desktop styles
+            // &:hover:not(.selected) a{
+            //     background: $very-light-gray;
+            // }
+            &.selected a{
+                background: $very-light-gray
+            }
+            &.disabled {
+                a,
+                i {
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
